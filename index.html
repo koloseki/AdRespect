@@ -5,6 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>giarddesign</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
     <script src="main.js" defer></script>
   </head>
@@ -13,7 +15,7 @@
 
       <img src="assets/giarddesign.svg" alt="giarddesign">
 
-      <div class="flex space-x-16">
+      <div class="flex space-x-12">
         <button class="flex space-x-1"><span>Oferta</span><img src="assets/DownArrow.svg" alt="Arrow representing a offer popup"></button>
         <a href="/about">O firmie</a>
         <a href="/contact">Realizacje</a>
@@ -21,20 +23,23 @@
         <button><img src="assets/Search.svg" alt="icon indicating search function"></button>
       </div>
     </nav>
-    <main class="flex">
-      <div class="flex-col justify-center items-center h-screen bg-dark-vanilla">
-        <h1 class="text-6xl font-medium">Nowoczesna aranżacja Twojego ogrodu</h1>
-        <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-3xl">
-          Button
-        </button>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-3xl">
-          Button
-        </button>
+    <main class="relative flex h-screen ">
+      <div class="flex flex-col justify-center items-start h-screen w-screen bg-dark-vanilla space-y-12 px-24">
+        <h1 class="text-6xl font-medium font-montserrat  w-2/3 font-bold">Nowoczesna aranżacja Twojego ogrodu</h1>
+        <p class="font-inter w-1/2">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+        <div class="flex space-x-9">
+          <button class="bg-pomona-green text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl hover:bg-dark-vanilla hover:outline outline-1 outline-pomona-green duration-300">
+            Skontaktuj się z nami
+          </button>
+          <button class="flex bg-dark-vanilla hover:bg-pomona-green text-pomona-green hover:text-anti-flash-white py-2.5 px-6 rounded-3xl  outline outline-1  hover:outline-0 outline-pomona-green duration-300 space-x-2">
+            <span>Zobacz nasze realizacje</span>
+            <img class="fill-cyan-500" src="assets/downVector.svg">
+          </button>
+        </div>
       </div>
-      <img src="" alt="Garden Pics">
-      <button>Left</button>
-      <button>Right</button>
+      <img src="/assets/photos/mainPhoto.jpg" class=" w-3/4 transform -scale-x-100 overflow-hidden" alt="Garden Pics">
+      <button class="absolute right-24 bottom-0 p-9 bg-white hover:opacity-80 duration-300"><img src="assets/leftPhoto.svg"></button>
+      <button class=" absolute right-0 bottom-0 p-9 bg-white hover:opacity-80 duration-300"><img src="assets/rightPhoto.svg"></button>
     </main>
 
     <section>
