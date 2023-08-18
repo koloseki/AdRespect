@@ -42,7 +42,7 @@
       <button class=" absolute right-0 bottom-0 p-9 bg-white hover:opacity-80 duration-300"><img src="assets/rightPhoto.svg"></button>
     </main>
 
-    <section>
+    <section class="bg-anti-flash-white">
       Oferta
       <h2>Działy kompleksowo</h2>
       <p>
@@ -55,20 +55,23 @@
     </section>
 
 
-    <section>
-      O firmie
-      <h2>Tworzymy z pasją</h2>
-      <p>
-        Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których
-        zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
-        które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
-      </p>
-      <button>Poznaj nas bliżej</button>
+    <section class="flex  bg-pomona-green text-anti-flash-white">
+      <img class="w-1/2" src="assets/photos/aboutPhoto.jpg">
+      <div class="w-1/2">
+        O firmie
+        <h2>Tworzymy z pasją</h2>
+        <p>
+          Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których
+          zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
+          które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+        </p>
+        <button>Poznaj nas bliżej</button>
+      </div>
     </section>
 
 
 
-    <section>
+    <section class="bg-dark-vanilla">
       <p>Realizacje</p>
       <h2>Nasze Projekty</h2>
       Obrazy
@@ -77,21 +80,50 @@
 
 
 
-    <section>
-      <div class="bg-pomona-green">
-        Zostań w kontakcie!
-        Znajdziesz nas na <strong>Instagramie</strong>.
-      </div>
-      <div class="bg-pomona-green">
-        Śledź nasze najnowsze realizacje!
-        <button class="bg-red-500 text-pomona-green hover:bg-pomona-green ">Instagram</button>
+    <section class="flex bg-anti-flash-white justify-center text-anti-flash-white">
+      <div class="flex py-10 px-9" >
+        <h2 class="flex flex-col justify-center bg-pomona-green p-24 text-4xl">
+          <p>Zostań w kontakcie!</p>
+          <p>Znajdziesz nas na <span class="italic font-semibold">Instagramie.</span></p>
+        </h2>
+        <div class="bg-pomona-green flex flex-col items-start p-24 space-y-6">
+          <p> Śledź nasze <br> najnowsze realizacje!</p>
+          <button class="bg-anti-flash-white py-2.5 px-6 rounded-3xl text-pomona-green hover:text-anti-flash-white hover:bg-pomona-green hover:outline outline-1 outline-anti-flash-white duration-300">Instagram</button>
+        </div>
       </div>
     </section>
 
-    <footer class="bg-chinese-black text-anti-flash-white">
-      <div>giarddesigng Daj znać co możemy dla ciebie zrobić <button>Skontaktuj się z nami</button></div>
-      <div>Kontakt Instagram Facebook Linkedin 000-000-000 giarddesign@kontakt.pl</div>
-      <div>Prawa zastrzeżone &copy; 2023 made by adRespect</div>
+    <footer class="flex w-screen flex-col justify-center items-center bg-chinese-black text-anti-flash-white space-y-16 py-20">
+      <div class="border-b border-anti-flash-white pb-20 flex w-3/5 justify-between flex-wrap items-center">
+        <img src="assets/giardDesignWhite.svg" alt="giarddesign">
+        <div class="flex items-center space-x-3">
+          <p>Daj znać co możemy dla ciebie zrobić</p>
+          <button class="bg-pomona-green text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl hover:bg-dark-vanilla hover:outline outline-1 outline-pomona-green duration-300">
+            Skontaktuj się z nami
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-between w-3/5">
+        <div class="space-x-12">
+          <button>Kontakt</button>
+          <button>Instagram</button>
+          <button>Facebook</button>
+          <button>Linkedin</button>
+        </div>
+        <p class="space-x-12">
+          <a href="tel:000-000-000">000-000-000</a>
+          <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+        </p>
+      </div>
+      <div class="flex w-3/5 pt-24 justify-between">
+        Prawa zastrzeżone &copy; 2023
+        <div class="flex">
+          made by
+          <a href="https://adrespect.pl" target="_blank">
+            <img src="assets/adRespectLogo.svg">
+          </a>
+        </div>
+      </div>
     </footer>
 
   </body>
