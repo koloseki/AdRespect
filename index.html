@@ -11,20 +11,29 @@
     <script src="main.js" defer></script>
   </head>
   <body>
+
     <nav class="flex justify-between px-24 py-6 ">
 
-      <img src="assets/giarddesign.svg" alt="giarddesign">
+      <img src="assets/svg/giarddesign.svg" alt="giarddesign">
 
       <div class="flex space-x-12">
-        <button class="flex space-x-1"><span>Oferta</span><img src="assets/DownArrow.svg" alt="Arrow representing a offer popup"></button>
+        <button class="flex space-x-1">
+          <span>Oferta</span>
+          <img src="assets/svg/downArrow.svg" alt="Arrow representing a offer popup">
+        </button>
         <a href="/about">O firmie</a>
         <a href="/contact">Realizacje</a>
         <a href="/contact">Kontakt</a>
-        <button><img src="assets/Search.svg" alt="icon indicating search function"></button>
+        <button>
+          <img src="assets/svg/search.svg" alt="icon indicating search function">
+        </button>
       </div>
     </nav>
+
+
+
     <main class="relative flex h-screen ">
-      <div class="flex flex-col justify-center items-start h-screen w-screen bg-dark-vanilla space-y-12 px-24">
+      <div class="flex flex-col justify-center items-start h-screen w-1/2 bg-dark-vanilla space-y-12 px-24">
         <h1 class="text-6xl font-medium font-montserrat  w-2/3 font-bold">Nowoczesna aranżacja Twojego ogrodu</h1>
         <p class="font-inter w-1/2">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
         <div class="flex space-x-9">
@@ -33,50 +42,88 @@
           </button>
           <button class="flex bg-dark-vanilla hover:bg-pomona-green text-pomona-green hover:text-anti-flash-white py-2.5 px-6 rounded-3xl  outline outline-1  hover:outline-0 outline-pomona-green duration-300 space-x-2">
             <span>Zobacz nasze realizacje</span>
-            <img class="fill-cyan-500" src="assets/downVector.svg">
+            <img class="fill-cyan-500" src="assets/svg/downVector.svg">
           </button>
         </div>
       </div>
-      <img src="/assets/photos/mainPhoto.jpg" class=" w-3/4 transform -scale-x-100 overflow-hidden" alt="Garden Pics">
-      <button class="absolute right-24 bottom-0 p-9 bg-white hover:opacity-80 duration-300"><img src="assets/leftPhoto.svg"></button>
-      <button class=" absolute right-0 bottom-0 p-9 bg-white hover:opacity-80 duration-300"><img src="assets/rightPhoto.svg"></button>
+      <img src="/assets/photos/mainPhoto.jpg" class="w-1/2 h-auto transform -scale-x-100 object-cover sc" alt="Garden Pics">
+      <button class="absolute right-24 bottom-0 p-9 bg-white hover:opacity-80 duration-300">
+        <img src="assets/svg/leftPhoto.svg">
+      </button>
+      <button class=" absolute right-0 bottom-0 p-9 bg-white hover:opacity-80 duration-300">
+        <img src="assets/svg/rightPhoto.svg">
+      </button>
     </main>
 
+
+
     <section class="bg-anti-flash-white">
-      Oferta
-      <h2>Działy kompleksowo</h2>
-      <p>
-        Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
-        Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
-      </p>
-      <div>Projekty</div>
-      <div>Wizualizacje</div>
-      <div>Realizacje</div>
+      <div class="flex flex-col px-64 pt-32 pb-16 w-9/12 justify-center items-start space-y-6">
+        <span class="text-pomona-green text-sm">Oferta</span>
+        <h2 class="text-5xl pb-4 ">
+          Działamy <span class="italic">kompleksowo</span>
+        </h2>
+        <p>
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+          Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+        </p>
+      </div>
+      <div class="flex justify-center items-start flex-wrap pb-32 space-x-16">
+        <div class="card">
+          <img src="assets/svg/projectsIcon.svg" class="w-10 pb-8">
+          <h3 class="text-3xl pb-4">Projekty</h3>
+          <p class="pb-16">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+          <button class="flex justify-center items-center text-pomona-green border-b border-pomona-green pb-1 space-x-3">
+            <p>Dowiedz się więcej</p>
+            <img src="assets/svg/greenRightVector.svg">
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/svg/visualIcon.svg" class="w-10 pb-8">
+          <h3 class="text-3xl pb-4">Wizualizacje</h3>
+          <p class="pb-16">Przedstawimy Ci projekty w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+          <button class="flex justify-center items-center text-pomona-green border-b border-pomona-green pb-1 space-x-3">
+            <p>Dowiedz się więcej</p>
+            <img src="assets/svg/greenRightVector.svg">
+          </button>
+        </div>
+        <div class="card">
+          <img src="assets/svg/realizationIcon.svg" class="w-10 pb-8">
+          <h3 class="text-3xl pb-4">Realizacje</h3>
+          <p class="pb-16">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+          <button class="flex justify-center items-center text-pomona-green border-b border-pomona-green pb-1 space-x-3">
+            <p>Zobacz nasze realizacje</p>
+            <img src="assets/svg/greenRightVector.svg">
+          </button>
+        </div>
+      </div>
     </section>
 
 
-    <section class="flex  bg-pomona-green text-anti-flash-white">
+    <section class="flex h-screen bg-pomona-green text-anti-flash-white">
       <img class="w-1/2" src="assets/photos/aboutPhoto.jpg">
-      <div class="w-1/2">
-        O firmie
-        <h2>Tworzymy z pasją</h2>
-        <p>
+      <div class="w-1/2 flex flex-col justify-center items-start px-48 py-16">
+
+        <p class="text-xs pt-24 pb-6">O firmie</p>
+        <h2 class="text-5xl font-medium pb-16">Tworzymy <br>z <span class="italic">pasją</span></h2>
+        <p class="pb-24">
           Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których
           zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
           które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
         </p>
-        <button>Poznaj nas bliżej</button>
+        <button class="flex bg-pomona-green hover:bg-anti-flash-white text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl  outline outline-1  hover:outline-0 outline-anti-flash-white duration-300 space-x-2">
+          <span>Poznaj nas bliżej</span> <img src="assets/svg/vectorRight.svg">
+        </button>
       </div>
     </section>
 
 
 
     <section class="bg-dark-vanilla">
-      <p>Realizacje</p>
-      <h2>Nasze Projekty</h2>
-      Obrazy
+      <span class="text-pomona-green text-xs">Realizacje</span>
+      <h2 class="text-5xl">Nasze <span class="italic">projekty</span></h2>
+      <div>Pictures section </div>
     </section>
-
 
 
 
@@ -93,12 +140,14 @@
       </div>
     </section>
 
+
+
     <footer class="flex w-screen flex-col justify-center items-center bg-chinese-black text-anti-flash-white space-y-16 py-20">
       <div class="border-b border-anti-flash-white pb-20 flex w-3/5 justify-between flex-wrap items-center">
-        <img src="assets/giardDesignWhite.svg" alt="giarddesign">
+        <img src="assets/svg/giardDesignWhite.svg" alt="giarddesign">
         <div class="flex items-center space-x-3">
           <p>Daj znać co możemy dla ciebie zrobić</p>
-          <button class="bg-pomona-green text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl hover:bg-dark-vanilla hover:outline outline-1 outline-pomona-green duration-300">
+          <button class="bg-pomona-green text-anti-flash-white hover:text-anti-flash-white py-2.5 px-6 rounded-3xl hover:bg-chinese-black hover:outline outline-1 outline-anti-flash-white duration-300">
             Skontaktuj się z nami
           </button>
         </div>
@@ -120,7 +169,7 @@
         <div class="flex">
           made by
           <a href="https://adrespect.pl" target="_blank">
-            <img src="assets/adRespectLogo.svg">
+            <img src="assets/svg/adRespectLogo.svg">
           </a>
         </div>
       </div>
