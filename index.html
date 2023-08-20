@@ -8,28 +8,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
-    <script src="main.js" defer></script>
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js" defer></script>
+    <script type="module" src="main.js" defer></script>
   </head>
   <body>
 
     <nav class="flex justify-between px-24 py-6 ">
 
-      <img src="assets/svg/giarddesign.svg" alt="giarddesign">
+      <img src="assets/svg/giarddesign.svg" alt="giarddesign" class="hover:scale-125 duration-300">
 
-      <div class="flex space-x-12">
-        <button class="flex space-x-1">
+      <div class="flex space-x-12 ">
+        <button id="offerButton" class="group flex space-x-1 hover:text-pomona-green">
           <span>Oferta</span>
-          <img src="assets/svg/downArrow.svg" alt="Arrow representing a offer popup">
+          <img src="assets/svg/downArrow.svg" alt="Arrow representing a offer popup" class="offerArrow duration-300">
+          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
+          <dialog class="absolute z-10 top-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="offerButton" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Opcja 1</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Opcja 2</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Opcja 3</a>
+            </div>
+          </dialog>
         </button>
-        <a href="/about">O firmie</a>
-        <a href="/contact">Realizacje</a>
-        <a href="/contact">Kontakt</a>
-        <button>
-          <img src="assets/svg/search.svg" alt="icon indicating search function">
-        </button>
+
+
+        <a href="/about" class="group hover:text-pomona-green">
+          O firmie
+          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
+        </a>
+        <a href="/contact" class="group hover:text-pomona-green">
+          Realizacje
+          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
+        </a>
+        <a href="/contact" class="group hover:text-pomona-green">
+          Kontakt
+          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
+        </a>
+        <div class="flex space-x-3 duration-300">
+          <button class="searchBarToggle hover:scale-125 duration-300">
+            <img src="assets/svg/search.svg" alt="icon indicating search function">
+          </button>
+          <form class="group searchBar hidden searchBarToggle hover:scale-105 duration-300 ">
+            <input type="text" placeholder="Wyszukaj" class="outline-none">
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
+          </form>
+        </div>
       </div>
     </nav>
-
+    <dialog class="z-10">
+      <span>You can see me</span>
+    </dialog>
 
 
     <main class="relative flex h-screen ">
@@ -119,10 +147,38 @@
 
 
 
-    <section class="bg-dark-vanilla">
-      <span class="text-pomona-green text-xs">Realizacje</span>
-      <h2 class="text-5xl">Nasze <span class="italic">projekty</span></h2>
-      <div>Pictures section </div>
+    <section class="bg-dark-vanilla pt-24">
+      <div class="mb-24 ml-36 space-y-3">
+        <span class="text-pomona-green text-xs ">Realizacje</span>
+        <h2 class="text-5xl">Nasze <span class="italic">projekty</span></h2>
+      </div>
+      <div class="grid bg-gradient-to-b from-blue-400">
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture2.jpg" alt="picture 1"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture4.jpg" alt="picture 2"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture3.jpg" alt="picture 3"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture6.jpg" alt="picture 4"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture7.jpg" alt="picture 5"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture1.jpg" alt="picture 6"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture8.jpg" alt="picture 7"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture5.jpg" alt="picture 8"></div>
+
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture9.jpg" alt="picture 9"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture10.jpg" alt="picture 10"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture11.jpg" alt="picture 11"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture12.jpg" alt="picture 12"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture13.jpg" alt="picture 13"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture14.jpg" alt="picture 14"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture15.jpg" alt="picture 15"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture16.jpg" alt="picture 16"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture17.jpg" alt="picture 17"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture18.jpg" alt="picture 18"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture19.jpg" alt="picture 19"></div>
+        <div class="grid-item"><img src="assets/photos/realizationImages/picture20.jpg" alt="picture 20"></div>
+      </div>
+      <button class="mt-auto ml-60 self-center flex bg-transparent hover:bg-chinese-black text-chinese-black hover:text-anti-flash-white py-2.5 px-6 rounded-3xl outline outline-1 hover:outline-0 outline-chinese-black duration-300 space-x-2">
+        <span>Rozwiń</span>
+        <img src="assets/svg/blackDownVector.svg" class="animate-bounce pt-1">
+      </button>
     </section>
 
 
@@ -166,8 +222,8 @@
       </div>
       <div class="flex w-3/5 pt-24 justify-between">
         Prawa zastrzeżone &copy; 2023
-        <div class="flex">
-          made by
+        <div class="flex hover:scale-125 duration-300 space-x-1">
+          <span>made by</span>
           <a href="https://adrespect.pl" target="_blank">
             <img src="assets/svg/adRespectLogo.svg">
           </a>
