@@ -12,7 +12,6 @@
     <script type="module" src="main.js" defer></script>
   </head>
   <body>
-
     <nav class="flex justify-between px-24 py-6 ">
 
       <img src="assets/svg/giarddesign.svg" alt="giarddesign" class="hover:scale-125 duration-300">
@@ -32,23 +31,23 @@
         </button>
 
 
-        <a href="/about" class="group hover:text-pomona-green">
+        <a href="#about-section" class="group hover:text-pomona-green">
           O firmie
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
         </a>
-        <a href="/contact" class="group hover:text-pomona-green">
+        <a href="#realizations" class="group hover:text-pomona-green">
           Realizacje
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
         </a>
-        <a href="/contact" class="group hover:text-pomona-green">
+        <a href="#contact" class="group hover:text-pomona-green">
           Kontakt
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
         </a>
-        <div class="flex space-x-3 duration-300">
-          <button class="searchBarToggle hover:scale-125 duration-300">
+        <div class="flex space-x-3">
+          <button id="searchToggle" class="searchBarToggle hover:scale-125 duration-300">
             <img src="assets/svg/search.svg" alt="icon indicating search function">
           </button>
-          <form class="group searchBar hidden searchBarToggle hover:scale-105 duration-300 ">
+          <form id="searchForm" class="group searchBar hidden searchBarToggle hover:scale-105 duration-300">
             <input type="text" placeholder="Wyszukaj" class="outline-none">
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
           </form>
@@ -65,13 +64,17 @@
         <h1 class="text-6xl font-medium font-montserrat  w-2/3 font-bold">Nowoczesna aranżacja Twojego ogrodu</h1>
         <p class="font-inter w-1/2">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
         <div class="flex space-x-9">
-          <button class="bg-pomona-green text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl hover:bg-dark-vanilla hover:outline outline-1 outline-pomona-green duration-300">
-            Skontaktuj się z nami
+          <a href="#contact">
+            <button class="bg-pomona-green text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl hover:bg-dark-vanilla hover:outline outline-1 outline-pomona-green duration-300">
+              Skontaktuj się z nami
+            </button>
+          </a>
+          <a href="#realizations">
+            <button class="flex bg-dark-vanilla hover:bg-pomona-green text-pomona-green hover:text-anti-flash-white py-2.5 px-6 rounded-3xl  outline outline-1  hover:outline-0 outline-pomona-green duration-300 space-x-2">
+              <span>Zobacz nasze realizacje</span>
+              <img class="fill-cyan-500" src="assets/svg/downVector.svg">
           </button>
-          <button class="flex bg-dark-vanilla hover:bg-pomona-green text-pomona-green hover:text-anti-flash-white py-2.5 px-6 rounded-3xl  outline outline-1  hover:outline-0 outline-pomona-green duration-300 space-x-2">
-            <span>Zobacz nasze realizacje</span>
-            <img class="fill-cyan-500" src="assets/svg/downVector.svg">
-          </button>
+          </a>
         </div>
       </div>
       <img src="/assets/photos/mainPhoto.jpg" class="w-1/2 h-auto transform -scale-x-100 object-cover sc" alt="Garden Pics">
@@ -128,7 +131,7 @@
     </section>
 
 
-    <section class="flex h-screen bg-pomona-green text-anti-flash-white">
+    <section id="about-section" class="flex h-screen bg-pomona-green text-anti-flash-white">
       <img class="w-1/2" src="assets/photos/aboutPhoto.jpg">
       <div class="w-1/2 flex flex-col justify-center items-start px-48 py-16">
 
@@ -147,81 +150,106 @@
 
 
 
-    <section class="bg-dark-vanilla pt-24">
+    <section id="realizations" class="bg-dark-vanilla pt-24 relative">
+
       <div class="mb-24 ml-36 space-y-3">
         <span class="text-pomona-green text-xs ">Realizacje</span>
         <h2 class="text-5xl">Nasze <span class="italic">projekty</span></h2>
       </div>
-      <div class="grid bg-gradient-to-b from-blue-400">
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture2.jpg" alt="picture 1"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture4.jpg" alt="picture 2"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture3.jpg" alt="picture 3"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture6.jpg" alt="picture 4"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture7.jpg" alt="picture 5"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture1.jpg" alt="picture 6"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture8.jpg" alt="picture 7"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture5.jpg" alt="picture 8"></div>
 
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture9.jpg" alt="picture 9"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture10.jpg" alt="picture 10"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture11.jpg" alt="picture 11"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture12.jpg" alt="picture 12"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture13.jpg" alt="picture 13"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture14.jpg" alt="picture 14"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture15.jpg" alt="picture 15"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture16.jpg" alt="picture 16"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture17.jpg" alt="picture 17"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture18.jpg" alt="picture 18"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture19.jpg" alt="picture 19"></div>
-        <div class="grid-item"><img src="assets/photos/realizationImages/picture20.jpg" alt="picture 20"></div>
+      <dialog class="flex bg-transparent galleryPhotoBrowser overscroll-none  no-scrollbar overflow-hidden space-x-9">
+        <div class="showingPhoto w-full h-screen flex justify-center items-center [&>img]:max-w-full [&>img]:max-h-full ">
+
+        </div>
+        <div class="flex flex-col bg-transparent justify-center space-y-6">
+          <button class="prevPhotoButton rotate-180 bg-pomona-green hover:bg-dark-vanilla text-anti-flash-white hover:text-pomona-green p-5 rounded-full shadow-md">
+            <img src="assets/svg/vectorRight.svg" alt="Previous Photo">
+          </button>
+          <button class="galleryCloseButton bg-red-400 hover:bg-red-300 text-anti-flash-white p-5 rounded-full shadow-md">
+            <img src="assets/svg/closeMark.svg" alt="Close Photo">
+          </button>
+          <button class="nextPhotoButton bg-pomona-green hover:bg-dark-vanilla text-anti-flash-white p-5 rounded-full shadow-md">
+            <img src="assets/svg/vectorRight.svg" alt="Next Photo">
+          </button>
+        </div>
+
+      </dialog>
+
+      <div class="grid bg-gradient-to-b from-blue-400">
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture1.jpg" alt="picture 1"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture2.jpg" alt="picture 2"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture3.jpg" alt="picture 3"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture4.jpg" alt="picture 4"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture5.jpg" alt="picture 5"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture6.jpg" alt="picture 6"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture7.jpg" alt="picture 7"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture8.jpg" alt="picture 8"></div>
+
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture9.jpg" alt="picture 9"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture10.jpg" alt="picture 10"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture11.jpg" alt="picture 11"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture12.jpg" alt="picture 12"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture13.jpg" alt="picture 13"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture14.jpg" alt="picture 14"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture15.jpg" alt="picture 15"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture16.jpg" alt="picture 16"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture17.jpg" alt="picture 17"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture18.jpg" alt="picture 18"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture19.jpg" alt="picture 19"></div>
+        <div class="grid-item galleryPhoto"><img src="assets/photos/realizationImages/picture20.jpg" alt="picture 20"></div>
       </div>
-      <button class="mt-auto ml-60 self-center flex bg-transparent hover:bg-chinese-black text-chinese-black hover:text-anti-flash-white py-2.5 px-6 rounded-3xl outline outline-1 hover:outline-0 outline-chinese-black duration-300 space-x-2">
-        <span>Rozwiń</span>
-        <img src="assets/svg/blackDownVector.svg" class="animate-bounce pt-1">
-      </button>
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+        <button class="flex bg-transparent hover:bg-chinese-black text-chinese-black hover:text-anti-flash-white py-2.5 px-6 rounded-3xl outline outline-1 hover:outline-0 outline-chinese-black duration-300 space-x-2 mb-8 bg-gradient-to-b from-yellow-400 to-transparent">
+          <span>Rozwiń</span>
+          <img src="assets/svg/blackDownVector.svg" class="animate-bounce pt-1">
+        </button>
+      </div>
     </section>
 
 
 
-    <section class="flex bg-anti-flash-white justify-center text-anti-flash-white">
-      <div class="flex py-10 px-9" >
-        <h2 class="flex flex-col justify-center bg-pomona-green p-24 text-4xl">
+    <section id="contact" class="flex bg-anti-flash-white justify-center text-anti-flash-white">
+      <div class="flex sm:flex-col md:flex-row py-10 px-9 flex-col">
+        <h2 class="flex justify-center bg-pomona-green p-12 sm:p-14 md:p-24 text-4xl flex-col">
           <p>Zostań w kontakcie!</p>
           <p>Znajdziesz nas na <span class="italic font-semibold">Instagramie.</span></p>
         </h2>
-        <div class="bg-pomona-green flex flex-col items-start p-24 space-y-6">
+        <div class="bg-pomona-green flex flex-col items-start p-12 sm:p-14 space-y-6">
           <p> Śledź nasze <br> najnowsze realizacje!</p>
-          <button class="bg-anti-flash-white py-2.5 px-6 rounded-3xl text-pomona-green hover:text-anti-flash-white hover:bg-pomona-green hover:outline outline-1 outline-anti-flash-white duration-300">Instagram</button>
+          <a href="https://www.instagram.com/cats_of_instagram/" target="_blank">
+            <button class="bg-anti-flash-white py-2.5 px-6 rounded-3xl text-pomona-green hover:text-anti-flash-white hover:bg-pomona-green hover:outline outline-1 outline-anti-flash-white duration-300">Instagram</button>
+          </a>
         </div>
       </div>
     </section>
 
 
 
-    <footer class="flex w-screen flex-col justify-center items-center bg-chinese-black text-anti-flash-white space-y-16 py-20">
-      <div class="border-b border-anti-flash-white pb-20 flex w-3/5 justify-between flex-wrap items-center">
-        <img src="assets/svg/giardDesignWhite.svg" alt="giarddesign">
-        <div class="flex items-center space-x-3">
-          <p>Daj znać co możemy dla ciebie zrobić</p>
-          <button class="bg-pomona-green text-anti-flash-white hover:text-anti-flash-white py-2.5 px-6 rounded-3xl hover:bg-chinese-black hover:outline outline-1 outline-anti-flash-white duration-300">
+
+    <footer class="flex flex-col justify-center items-center bg-chinese-black text-anti-flash-white space-y-8 sm:space-y-16 py-16 sm:py-20">
+      <div class="border-b border-anti-flash-white pb-12 sm:pb-20 w-4/5 sm:w-3/5 flex flex-col justify-between sm:flex-row items-center">
+        <img src="assets/svg/giardDesignWhite.svg" alt="giarddesign" class="mb-8 sm:mb-0">
+        <div class="flex flex-col items-center sm:flex-row sm:space-x-3">
+          <p class="text-center sm:text-left">Daj znać co możemy dla ciebie zrobić</p>
+          <button class="bg-pomona-green text-anti-flash-white hover:text-anti-flash-white py-2.5 px-6 rounded-3xl hover:bg-chinese-black hover:outline outline-1 outline-anti-flash-white duration-300 mt-4 sm:mt-0">
             Skontaktuj się z nami
           </button>
         </div>
       </div>
-      <div class="flex justify-between w-3/5">
-        <div class="space-x-12">
+      <div class="flex flex-col sm:flex-row w-4/5 sm:w-3/5 justify-between">
+        <div class="space-y-4 sm:space-y-0 sm:space-x-12">
           <button>Kontakt</button>
           <button>Instagram</button>
           <button>Facebook</button>
           <button>Linkedin</button>
         </div>
-        <p class="space-x-12">
+        <p class="mt-4 sm:mt-0 space-y-4 sm:space-y-0 sm:space-x-12">
           <a href="tel:000-000-000">000-000-000</a>
           <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
         </p>
       </div>
-      <div class="flex w-3/5 pt-24 justify-between">
-        Prawa zastrzeżone &copy; 2023
+      <div class="flex w-4/5 sm:w-3/5 pt-12 sm:pt-24 justify-between items-center">
+        <p class="text-center sm:text-left">Prawa zastrzeżone &copy; 2023</p>
         <div class="flex hover:scale-125 duration-300 space-x-1">
           <span>made by</span>
           <a href="https://adrespect.pl" target="_blank">
@@ -230,6 +258,7 @@
         </div>
       </div>
     </footer>
+
 
   </body>
 </html>

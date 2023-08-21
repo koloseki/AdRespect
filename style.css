@@ -3,6 +3,29 @@
 @import 'tailwindcss/utilities';
 
 
+/*Utility to hide scrollbar*/
+@layer utilities {
+    @variants responsive {
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    }
+}
+
+
+.showingPhoto {
+    max-width: 90%; /* Maksymalna szerokość kontenera */
+    overflow-x: auto; /* Przewijanie poziome w razie potrzeby */
+}
+
+
 .card{
     @apply bg-white rounded-3xl p-10 w-96 my-7 h-96 flex flex-col justify-center items-start shadow-2xl;
 }
@@ -24,10 +47,12 @@
     margin-right: 10px; /* Odstęp poziomy między kafelkami */
     transition: transform 0.3s ease; /* Efekt przejścia */
     cursor: pointer;
+    filter: brightness(98%);
 }
 
 .grid-item:hover {
     transform: scale(1.05); /* Efekt powiększenia po najechaniu myszą */
+    filter: brightness(100%);
 }
 .rotate{
     transform: rotate(180deg);
@@ -54,3 +79,10 @@
 #offerButton:hover::after {
     transform: scaleX(1); /* Rozszerza się przy hoverze */
 }
+
+/*Photo Gallery Dialog settings*/
+dialog::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.50);
+    backdrop-filter: blur(5px);
+}
+
