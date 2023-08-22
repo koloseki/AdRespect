@@ -16,6 +16,8 @@ export default {
         'chinese-black': '#111111',
         'isabelline': '#ECF1F5',
         'anti-flash-white': '#F5F0EC',
+        'facebook': '#3B5998',
+        'linkedin': '#0077B5',
 
     },
   },
