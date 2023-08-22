@@ -7,8 +7,6 @@ window.onload = function() {
     // Tworzenie instancji Masonry
     const grid = document.querySelector('.grid');
     const msnry = new Masonry(grid);
-    alert('If you see this the website is not yet completed' +
-        ' it will be completed by 22/08/2023 by 23:59');
 };
 
 

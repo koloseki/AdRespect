@@ -10,7 +10,6 @@
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
-
         /* Hide scrollbar for IE, Edge and Firefox */
         .no-scrollbar {
             -ms-overflow-style: none;  /* IE and Edge */
@@ -22,19 +21,32 @@
 
 
 
-
-
-
-
 .showingPhoto {
-    max-width: 90%; /* Maksymalna szerokość kontenera */
-    overflow-x: auto; /* Przewijanie poziome w razie potrzeby */
+    max-width: 90%;
+    overflow-x: auto;
 }
 
 
 .card{
-    @apply bg-white rounded-3xl p-10 w-96 my-7 h-96 flex flex-col justify-center items-start shadow-2xl;
+    @apply bg-white rounded-3xl p-10 w-96 my-7 h-96 flex flex-col justify-center items-start shadow-2xl duration-300;
 }
+.card:hover{
+    @apply transform scale-105 transition duration-1000;
+}
+
+
+.ripple:hover {
+    background: white radial-gradient(circle, transparent 1%, #e66465, #9198e5 3%) center/15000%;
+}
+
+.ripple:active {
+    transition: .6s ease-out;
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background .9s;
+    @apply transform scale-100 duration-500;
+}
+
 
 
 .grid {
@@ -55,27 +67,29 @@
     cursor: pointer;
     filter: brightness(98%);
 }
+
+/*Width of the panels*/
 @media (max-width: 768px) {
     .grid-item {
-        width: calc(50% - 20px); /* Szerokość kafelka */
+        width: calc(50% - 20px);
     }
 }
 @media (max-width: 480px) {
     .grid-item {
-        width: calc(100% - 20px); /* Szerokość kafelka */
+        width: calc(100% - 20px);
         gap: 10px;
     }
 }
 
 .grid-item:hover {
-    transform: scale(1.05); /* Efekt powiększenia po najechaniu myszą */
+    transform: scale(1.05);
     filter: brightness(100%);
 }
 .rotate{
     transform: rotate(180deg);
 }
 
-/*offerbutton*/
+/*offer button*/
 #offerButton {
     position: relative;
 }
@@ -87,14 +101,13 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #1B5B31; /* Kolor underlinii */
-    transform: scaleX(0); /* Zaczyna się niewidoczne */
+    background-color: #1B5B31;
+    transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.3s ease;
 }
-
 #offerButton:hover::after {
-    transform: scaleX(1); /* Rozszerza się przy hoverze */
+    transform: scaleX(1);
 }
 
 /*Photo Gallery Dialog settings*/
