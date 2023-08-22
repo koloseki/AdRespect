@@ -12,51 +12,51 @@
     <script type="module" src="main.js" defer></script>
   </head>
   <body>
-    <nav class="flex justify-between px-24 py-6 ">
+  <nav class="flex justify-between px-6 py-4 md:px-24 md:py-6 overflow-scroll">
+    <img src="assets/svg/giarddesign.svg" alt="giarddesign" class="hover:scale-125 duration-300 hidden ultra-sm:block">
 
-      <img src="assets/svg/giarddesign.svg" alt="giarddesign" class="hover:scale-125 duration-300">
 
-      <div class="flex space-x-12 ">
-        <button id="offerButton" class="group flex space-x-1 hover:text-pomona-green">
-          <span>Oferta</span>
-          <img src="assets/svg/downArrow.svg" alt="Arrow representing a offer popup" class="offerArrow duration-300">
-          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
-          <dialog class="absolute z-10 top-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-            <div class="py-1" role="none">
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Opcja 1</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Opcja 2</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Opcja 3</a>
-            </div>
-          </dialog>
+    <div class="flex space-x-6 md:space-x-12">
+      <button id="offerButton" class="group flex space-x-1 hover:text-pomona-green relative">
+        <span>Oferta</span>
+        <img src="assets/svg/downArrow.svg" alt="Arrow representing a offer popup" class="offerArrow duration-300">
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green absolute bottom-0 left-0 right-0"></span>
+        <dialog class="hidden md:absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div class="py-1" role="none">
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Opcja 1</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Opcja 2</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Opcja 3</a>
+          </div>
+        </dialog>
+      </button>
+
+      <a href="#about-section" class="group hover:text-pomona-green relative">
+        O firmie
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green absolute bottom-0 left-0 right-0"></span>
+      </a>
+      <a href="#realizations" class="group hover:text-pomona-green relative">
+        Realizacje
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green absolute bottom-0 left-0 right-0"></span>
+      </a>
+      <a href="#contact" class="group hover:text-pomona-green relative">
+        Kontakt
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green absolute bottom-0 left-0 right-0"></span>
+      </a>
+      <div class="flex space-x-3">
+        <button id="searchToggle" class="searchBarToggle hover:scale-125 duration-300">
+          <img src="assets/svg/search.svg" alt="icon indicating search function">
         </button>
-
-
-        <a href="#about-section" class="group hover:text-pomona-green">
-          O firmie
+        <form id="searchForm" class="group searchBar hidden searchBarToggle hover:scale-105 duration-300">
+          <input type="text" placeholder="Wyszukaj" class="outline-none">
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
-        </a>
-        <a href="#realizations" class="group hover:text-pomona-green">
-          Realizacje
-          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
-        </a>
-        <a href="#contact" class="group hover:text-pomona-green">
-          Kontakt
-          <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
-        </a>
-        <div class="flex space-x-3">
-          <button id="searchToggle" class="searchBarToggle hover:scale-125 duration-300">
-            <img src="assets/svg/search.svg" alt="icon indicating search function">
-          </button>
-          <form id="searchForm" class="group searchBar hidden searchBarToggle hover:scale-105 duration-300">
-            <input type="text" placeholder="Wyszukaj" class="outline-none">
-            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-pomona-green"></span>
-          </form>
-        </div>
+        </form>
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
-    <main class="relative flex  flex-col md:flex-row h-auto md:h-screen ">
+
+  <main class="relative flex  flex-col md:flex-row h-auto md:h-screen ">
       <div class="flex flex-col justify-center items-center md:items-start h-screen w-screen md:w-1/2 bg-dark-vanilla space-y-6 md:space-y-12 px-6 md:px-12 xl:px-16 2xl:px-24">
         <h1 class="text-3xl md:text-6xl font-montserrat md:w-4/5 font-bold text-center md:text-left">Nowoczesna aranżacja Twojego ogrodu</h1>
         <p class="font-inter w-full md:w-4/5 text-center md:text-left">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
@@ -69,7 +69,7 @@
           <a href="#realizations">
             <button class="flex bg-dark-vanilla hover:bg-pomona-green text-pomona-green hover:text-anti-flash-white py-2.5 px-6 rounded-3xl outline outline-1 hover:outline-0 outline-pomona-green duration-300 space-x-2">
               <span>Zobacz nasze realizacje</span>
-              <img class="fill-cyan-500" src="assets/svg/downVector.svg">
+              <img class="fill-cyan-500" src="assets/svg/downVector.svg" alt="Vector pointing down">
             </button>
           </a>
         </div>
@@ -87,12 +87,12 @@
       <button
               id="prevButton"
               class="absolute right-24 bottom-0 p-9 bg-white hover:opacity-80 duration-300">
-        <img src="assets/svg/leftPhoto.svg">
+        <img src="assets/svg/leftPhoto.svg" alt="arrow in the left direction">
       </button>
       <button
               id="nextButton"
               class=" absolute right-0 bottom-0 p-9 bg-white hover:opacity-80 duration-300">
-        <img src="assets/svg/rightPhoto.svg">
+        <img src="assets/svg/rightPhoto.svg" alt="arrow in the right direction">
       </button>
     </main>
 
@@ -111,30 +111,30 @@
       </div>
       <div class="flex justify-center items-center flex-wrap pb-16 md:pb-32 space-y-8 md:space-y-0 md:space-x-16 lg:space-x-24 xl:space-x-32">
         <button class="card ripple" >
-          <img src="assets/svg/projectsIcon.svg" class="w-10 pb-6 md:pb-8">
+          <img src="assets/svg/projectsIcon.svg" class="w-10 pb-6 md:pb-8" alt="pencil icon">
           <h3 class="text-2xl md:text-3xl pb-2 md:pb-4">Projekty</h3>
           <p class="pb-10 md:pb-16 text-start">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
           <a class="flex justify-center items-center text-pomona-green border-b border-pomona-green pb-1 space-x-2">
             <p>Dowiedz się więcej</p>
-            <img src="assets/svg/greenRightVector.svg">
+            <img src="assets/svg/greenRightVector.svg" alt="arrow in the right direction">
           </a>
         </button>
         <button class="card ripple" id="bt">
-          <img src="assets/svg/visualIcon.svg" class="w-10 pb-6 md:pb-8">
+          <img src="assets/svg/visualIcon.svg" class="w-10 pb-6 md:pb-8" alt="eye icon">
           <h3 class="text-2xl md:text-3xl pb-2 md:pb-4">Wizualizacje</h3>
           <p class="pb-10 md:pb-16 text-start">Przedstawimy Ci projekty w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
           <a class="flex justify-center items-center text-pomona-green border-b border-pomona-green pb-1 space-x-2">
             <p>Dowiedz się więcej</p>
-            <img src="assets/svg/greenRightVector.svg">
+            <img src="assets/svg/greenRightVector.svg" alt="vector in the right direction">
           </a>
         </button>
         <button class="card ripple">
-          <img src="assets/svg/realizationIcon.svg" class="w-10 pb-6 md:pb-8">
+          <img src="assets/svg/realizationIcon.svg" class="w-10 pb-6 md:pb-8" alt="stars icon">
           <h3 class="text-2xl md:text-3xl pb-2 md:pb-4">Realizacje</h3>
           <p class="pb-10 md:pb-16 text-start">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
           <a class="flex justify-center items-center text-pomona-green border-b border-pomona-green pb-1 space-x-2">
             <p>Zobacz nasze realizacje</p>
-            <img src="assets/svg/greenRightVector.svg">
+            <img src="assets/svg/greenRightVector.svg" alt="arrow in the right direction">
           </a>
         </button>
       </div>
@@ -143,14 +143,14 @@
 
 
     <section id="about-section" class="flex flex-col sm:flex-row h-auto lg:h-screen bg-pomona-green text-anti-flash-white">
-      <img class="w-full sm:w-1/2 object-cover" src="assets/photos/aboutPhoto.jpg">
+      <img class="w-full sm:w-1/2 object-cover" src="assets/photos/aboutPhoto.jpg" alt="photo with japanese looking house">
       <div class="w-full sm:w-1/2 flex flex-col justify-center items-center sm:items-start px-4 sm:px-12 md:px-24 py-16">
 
         <p class="text-xs pt-8 sm:pt-24 pb-3 sm:pb-6 2xl:pl-16">O firmie</p>
         <h2 class="text-3xl sm:text-5xl font-medium pb-8 sm:pb-16 2xl:pl-16">Tworzymy <br>z <span class="italic">pasją</span></h2>
         <p class="pb-8 sm:pb-24 2xl:pl-16">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
         <button class="flex bg-pomona-green hover:bg-anti-flash-white text-anti-flash-white hover:text-pomona-green py-2.5 px-6 rounded-3xl outline outline-1 hover:outline-0 outline-anti-flash-white duration-300 space-x-2 2xl:ml-16">
-          <span>Poznaj nas bliżej</span> <img src="assets/svg/vectorRight.svg">
+          <span>Poznaj nas bliżej</span> <img src="assets/svg/vectorRight.svg" alt="vector pointing right">
         </button>
       </div>
     </section>
@@ -162,7 +162,7 @@
 
     <section id="realizations" class="bg-dark-vanilla pt-24 relative overflow-hidden">
 
-      <div class="mb-24 ml-36 space-y-3">
+      <div class="mb-24 ml-20 mb:ml-36 space-y-3">
         <span class="text-pomona-green text-xs ">Realizacje</span>
         <h2 class="text-5xl">Nasze <span class="italic">projekty</span></h2>
       </div>
@@ -212,7 +212,7 @@
       <div class="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-b from-transparent to-dark-vanilla flex justify-center items-end pointer-events-none">
         <button class="expand-button flex bg-transparent hover:bg-chinese-black text-chinese-black hover:text-anti-flash-white py-2.5 px-6 rounded-3xl outline outline-1 hover:outline-0 outline-chinese-black duration-300 space-x-2 mb-16 pointer-events-auto">
           <span>Rozwiń</span>
-          <img src="assets/svg/blackDownVector.svg" class="expandButtonIcon duration-300">
+          <img src="assets/svg/blackDownVector.svg" class="expandButtonIcon duration-300" alt="vector pointing down">
         </button>
       </div>
     </section>
@@ -291,11 +291,6 @@
 
     </footer>
 
-
-
-
-    </div>
-    </footer>
 
 
   </body>

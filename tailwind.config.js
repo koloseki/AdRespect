@@ -20,6 +20,10 @@ export default {
         'linkedin': '#0077B5',
 
     },
+      screens: {
+        'ultra-sm': '480px',  // Twój niestandardowy breakpoint dla mniejszych ekranów
+
+      },
   },
   plugins: [],
 }
