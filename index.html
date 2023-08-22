@@ -147,32 +147,33 @@
 
 
 
-    <section id="realizations" class="bg-dark-vanilla pt-24 relative">
+    <section id="realizations" class="bg-dark-vanilla pt-24 relative overflow-hidden">
 
       <div class="mb-24 ml-36 space-y-3">
         <span class="text-pomona-green text-xs ">Realizacje</span>
         <h2 class="text-5xl">Nasze <span class="italic">projekty</span></h2>
       </div>
 
-      <dialog class="flex bg-transparent galleryPhotoBrowser overscroll-none  no-scrollbar overflow-hidden space-x-9">
+      <dialog class="flex bg-transparent galleryPhotoBrowser overscroll-none no-scrollbar overflow-hidden space-x-0 flex-col items-center z-0">
         <div class="showingPhoto w-full h-screen flex justify-center items-center [&>img]:max-w-full [&>img]:max-h-full ">
 
         </div>
-        <div class="flex flex-col bg-transparent justify-center space-y-6">
-          <button class="prevPhotoButton rotate-180 bg-pomona-green hover:bg-dark-vanilla text-anti-flash-white hover:text-pomona-green p-5 rounded-full shadow-md">
+        <div class="flex bg-transparent justify-center items-center space-x-6 mt-4 sm:mt-0">
+          <button class="prevPhotoButton rotate-180 bg-pomona-green hover:bg-dark-vanilla  hover:text-pomona-green px-4 py-2 rounded-full ">
             <img src="assets/svg/vectorRight.svg" alt="Previous Photo">
           </button>
-          <button class="galleryCloseButton bg-red-400 hover:bg-red-300 text-anti-flash-white p-5 rounded-full shadow-md">
+          <button class="galleryCloseButton bg-red-400 hover:bg-red-300  px-4 py-2 rounded-full w-12">
             <img src="assets/svg/closeMark.svg" alt="Close Photo">
           </button>
-          <button class="nextPhotoButton bg-pomona-green hover:bg-dark-vanilla text-anti-flash-white p-5 rounded-full shadow-md">
+          <button class="nextPhotoButton bg-pomona-green hover:bg-dark-vanilla  px-4 py-2 rounded-full">
             <img src="assets/svg/vectorRight.svg" alt="Next Photo">
           </button>
         </div>
-
       </dialog>
 
-      <div class="grid">
+
+
+      <div class="grid bg-dark-vanilla">
         <div class="grid-item galleryPhoto "><img src="assets/photos/realizationImages/picture1.jpg" alt="picture 1"></div>
         <div class="grid-item galleryPhoto "><img src="assets/photos/realizationImages/picture2.jpg" alt="picture 2"></div>
         <div class="grid-item galleryPhoto "><img src="assets/photos/realizationImages/picture3.jpg" alt="picture 3"></div>

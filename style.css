@@ -49,6 +49,17 @@
     cursor: pointer;
     filter: brightness(98%);
 }
+@media (max-width: 768px) {
+    .grid-item {
+        width: calc(50% - 20px); /* Szerokość kafelka */
+    }
+}
+@media (max-width: 480px) {
+    .grid-item {
+        width: calc(100% - 20px); /* Szerokość kafelka */
+        gap: 10px;
+    }
+}
 
 .grid-item:hover {
     transform: scale(1.05); /* Efekt powiększenia po najechaniu myszą */
