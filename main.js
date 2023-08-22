@@ -1,5 +1,6 @@
 import Masonry from 'masonry-layout'
 import './scripts/galleryController.js';
+import './scripts/mainPhotosController.js';
 
 
 window.onload = function() {
